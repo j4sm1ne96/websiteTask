@@ -1,7 +1,7 @@
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
-        slidesToScroll: 3,
-        slidesToShow: 1,
+        slidesToScroll: 1,
+        slidesToShow: 2.5,
         dots: '.dots'
     });
   })
