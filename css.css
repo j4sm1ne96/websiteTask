@@ -157,6 +157,12 @@ h4 {
     position: relative;
 }
 
+.poster {
+    position: absolute;
+    right: 10%;
+    bottom: 70%;
+    height: 20%;
+}
 .play {
     position: absolute;
     left: 45%;
