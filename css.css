@@ -2,6 +2,21 @@
     box-sizing: border-box;
  }
 
+ @font-face {
+    font-family: boldFont;
+    src: url(fonts/ProximaNova-Bold.otf)
+ }
+
+ @font-face {
+     font-family: semiBoldFont;
+     src: url(fonts/ProximaNova-Semibold.otf);
+ }
+
+ @font-face {
+     font-family: regularFont;
+     src: url(fonts/ProximaNova-Regular.otf);
+ }
+
  body, html {
     margin: 0 auto;
     padding: 0;
@@ -27,6 +42,7 @@
     text-align: center;
     font-size: 20px;
     width: 100%;
+    font-family: semiBoldFont;
 }
 
 .a1 {
@@ -73,26 +89,35 @@ body {
 
 .text {
     position: absolute;
-    top: 30%;
-    left: 10px;
+    top: 20%;
+    left: 3%;
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 32px;
+    font-family: boldFont;
+    font-size: 9vw;
 }
+
+
 
  .wave1, .wave2 {
     display: flex;
-    
+    height: 200px; 
+}
+
+.object-fit {
+    object-fit: fill;
+    width: 100%;
 }
 
 /* info section */
 .info {
     text-align: center;
-    font-family: Arial Bold, Helvetica, sans-serif;
-    font-size: 20px;
-    background-color: rgb(52, 110, 133);
+    font-family: semiBoldFont;
+    font-size: 25px;
+    background-color: rgb(51, 104, 131);
     color: white;
-    padding: 10%;
+    padding: 8%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 /* glider */
@@ -100,18 +125,21 @@ body {
     height: 80%;
     margin-top: 5%;
     margin-left: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /* video */
 h3 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: boldFont;
+    font-size: 30px;
     color: rgb(43, 89, 107);
 }
 
 h4 {
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: boldFont;
     color: rgb(43, 89, 107);
 }
 
@@ -134,24 +162,25 @@ h4 {
     left: 45%;
     top: 40%;
     bottom: 40%;
+    height: 20%;
 }
 .sound {
     position: absolute;
     right: 13%;
     bottom: 5%;
-    height: 30px;
+    height: 5%;
 }
 .resize {
     position: absolute;
     right: 10%;
     bottom: 5%;
-    height: 30px;
+    height: 5%;
 }
 .dotsV {
     position: absolute;
     right: 8%;
     bottom: 5%;
-    height: 30px;
+    height: 5%;
 }
 
 
@@ -161,7 +190,11 @@ footer {
     margin: 2%;
 }
 
+#one, #two {
+    font-family: semiBoldFont;
+}
+
 footer>p {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: regularFont;
     font-size: 14px;
 }
