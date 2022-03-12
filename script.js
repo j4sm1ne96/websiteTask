@@ -5,5 +5,5 @@ window.addEventListener('load', function(){
         dots: '.dots'
     });
   })
-
-    
+  
+  
